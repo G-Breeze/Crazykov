@@ -3,9 +3,9 @@
 	"id": "crazykov",
 	"version": "${version}",
 	"name": "CrazyKov",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A Minecraft Mod about Tarkov like.",
 	"authors": [
-		"Me!"
+		"G_Breeze"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
