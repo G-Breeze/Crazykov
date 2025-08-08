@@ -1,0 +1,32 @@
+{
+  "message.crazykov.low_stamina": "体力不足!",
+  "itemGroup.crazykov.medical_group": "蜂克夫-医疗",
+  "itemGroup.crazykov.weapon_group": "蜂克夫-武器",
+  "itemGroup.crazykov.armor_group": "蜂克夫-装备",
+
+  "item.crazykov.medical_kit": "医疗箱",
+  "item.crazykov.bandage": "绷带",
+  "item.crazykov.ammo_box": "弹药箱",
+
+  "tooltip.crazykov.weight": "重量: %d kg",
+  "tooltip.crazykov.rarity.common": "普通",
+  "tooltip.crazykov.rarity.fine": "良好",
+  "tooltip.crazykov.rarity.uncommon": "精致",
+  "tooltip.crazykov.rarity.rare": "稀有",
+  "tooltip.crazykov.rarity.epic": "珍藏",
+  "tooltip.crazykov.rarity.legendary": "珍宝",
+
+  "tooltip.crazykov.medical.preparation": "准备时间: %d s",
+  "tooltip.crazykov.medical.remain": "剩余治疗量: %d",
+  "tooltip.crazykov.medical.interval": "治疗间隔: %d s",
+  "tooltip.crazykov.medical.heal": "单次治疗量: %d",
+  "tooltip.crazykov.bandage.preparation": "准备时间: %d s",
+  "tooltip.crazykov.bandage.remain": "剩余使用次数: %d",
+  "tooltip.crazykov.bandage.interval": "使用时间: %d s",
+
+  "effect.crazykov.arm_fracture": "手臂骨折",
+  "effect.crazykov.leg_fracture": "腿部骨折",
+  "effect.crazykov.bleeding": "流血",
+  "effect.crazykov.head_ache": "头疼",
+  "effect.crazykov.back_ache": "背痛"
+}

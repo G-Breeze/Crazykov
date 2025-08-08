@@ -8,6 +8,7 @@ import net.minecraft.util.math.MathHelper;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 
 public class StaminaHud implements HudRenderCallback {
+
     @Override
     public void onHudRender(DrawContext drawContext, RenderTickCounter tickCounter) {
         MinecraftClient client = MinecraftClient.getInstance();
@@ -22,14 +23,18 @@ public class StaminaHud implements HudRenderCallback {
         int screenWidth = client.getWindow().getScaledWidth();
         int screenHeight = client.getWindow().getScaledHeight();
 
-        // 在经验条上方绘制（兼容1.21.1 UI布局）
-        int barWidth = 182;
-        int barHeight = 5;
-        int x = screenWidth / 2 - barWidth / 2;
-        int y = screenHeight - 49; // 经验条上方10像素
+        // 在饱食度上方绘制（兼容1.21.1 UI布局）
+        int barWidth = 81;
+        int barHeight = 3;
+        int x = screenWidth / 2 + 10;
+        int y = screenHeight - 44; // 经验条上方5像素
 
         // 绘制半透明背景（60%不透明度）
         drawContext.fill(x - 1, y - 1, x + barWidth + 1, y + barHeight + 1, 0x60000000);
+
+        // 提升渲染层级
+        drawContext.getMatrices().push();
+        drawContext.getMatrices().translate(0, 0, 600); // Z轴偏移到最前
 
         // 绘制动态体力条（颜色渐变）
         int filledWidth = (int)(barWidth * ratio);
@@ -37,10 +42,12 @@ public class StaminaHud implements HudRenderCallback {
         drawContext.fill(x, y, x + filledWidth, y + barHeight, color);
 
         // 绘制体力数值（居中显示）
-        String text = String.format("%.0f", stamina);
-        int textX = screenWidth / 2 - client.textRenderer.getWidth(text) / 2;
-        int textY = y - 10; // 数值位于体力条上方
-        drawContext.drawTextWithShadow(client.textRenderer, text, textX, textY, 0xFFFFFFFF);
+//        String text = String.format("%.0f", stamina);
+//        int textX = screenWidth / 2 - client.textRenderer.getWidth(text) / 2;
+//        int textY = y - 10; // 数值位于体力条上方
+//        drawContext.drawTextWithShadow(client.textRenderer, text, textX, textY, 0xFFFFFFFF);
+
+        drawContext.getMatrices().pop();
     }
 
     // 动态颜色计算：绿(100%) → 黄(50%) → 红(0%)

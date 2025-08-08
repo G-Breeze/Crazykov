@@ -1,3 +1,32 @@
 {
-  "message.crazykov.low_stamina": "体力不足!"
+  "message.crazykov.low_stamina": "Low Stamina!",
+  "itemGroup.crazykov.medical_group": "Crazykov-Medical",
+  "itemGroup.crazykov.weapon_group": "Crazykov-Weapon",
+  "itemGroup.crazykov.armor_group": "Crazykov-Armor",
+
+  "item.crazykov.medical_kit": "Medical kit",
+  "item.crazykov.bandage": "Bandage",
+  "item.crazykov.ammo_box": "AmmoBox",
+
+  "tooltip.crazykov.weight": "Weight:  %d kg",
+  "tooltip.crazykov.rarity.common": "Common",
+  "tooltip.crazykov.rarity.fine": "Fine",
+  "tooltip.crazykov.rarity.uncommon": "Uncommon",
+  "tooltip.crazykov.rarity.rare": "Rare",
+  "tooltip.crazykov.rarity.epic": "Epic",
+  "tooltip.crazykov.rarity.legendary": "Legendary",
+
+  "tooltip.crazykov.medical.preparation": "preparation: %d s",
+  "tooltip.crazykov.medical.remain": "Remain: %d",
+  "tooltip.crazykov.medical.interval": "Interval: %d s",
+  "tooltip.crazykov.medical.heal": "Heal %d PerTime",
+  "tooltip.crazykov.bandage.preparation": "Preparation: %d s",
+  "tooltip.crazykov.bandage.remain": "Remain: %d",
+  "tooltip.crazykov.bandage.interval": "Interval: %d s",
+
+  "effect.crazykov.arm_fracture": "Arm Fracture",
+  "effect.crazykov.leg_fracture": "Leg Fracture",
+  "effect.crazykov.bleeding": "Bleeding",
+  "effect.crazykov.head_ache": "HeadAche",
+  "effect.crazykov.back_ache": "BackAche"
 }
